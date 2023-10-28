@@ -48,26 +48,39 @@
 ```py
 import gspread
 import numpy as np
-gc = gspread.service_account(filename='work4-402209-5356a8a03952.json')
-sh = gc.open("UnityWorkShop 3")
+gc = gspread.service_account(filename='primeval-jet-400706-64d34c322687.json')
+sh = gc.open("lab2")
 speed = 4.00
 timeEgg = 2.00
 lrDist = 10.00
 chanceDir = 0.01
 i = 0
-end = 8
-while i <= end:   
-    tempRand = np.random.randint(-100, 100, 3)    
+end = 9
+
+sh.sheet1.update(('B' + str(2)), speed)
+
+sh.sheet1.update(('C' + str(2)), timeEgg)
+
+sh.sheet1.update(('D' + str(2)), lrDist)
+
+sh.sheet1.update(('E' + str(2)), chanceDir)
+
+sh.sheet1.update(('A' + str(2)), 1)
+        
+while i < end:   
     i += 1
-    if i == 0:
-        continue
-    else:        
-        sh.sheet1.update(('A' + str(i+2)), speed+2.3*i+(tempRand[0]/1000))
-        sh.sheet1.update(('B' + str(i+2)), timeEgg-0.15*i+(tempRand[1]/1000))
-        sh.sheet1.update(('C' + str(i+2)), lrDist+0.5*i+(tempRand[2]/1000))
-        sh.sheet1.update(('D' + str(i+2)), chanceDir+0.0005*i)
-        sh.sheet1.update(('E' + str(i+1)), i)
-        print('ok')
+
+    sh.sheet1.update(('B' + str(i+2)), speed*1.25**(i))
+    
+    sh.sheet1.update(('C' + str(i+2)), timeEgg*0.8**(i))
+    
+    sh.sheet1.update(('D' + str(i+2)), lrDist*1.05**(i))
+    
+    sh.sheet1.update(('E' + str(i+2)), chanceDir*1.1**(i))
+    
+    sh.sheet1.update(('A' + str(i+2)), i+1)
+    
+    print("^_^")
 ```
 
 ![image](https://github.com/knightalli/DAinGD-lab3/assets/127225486/6b4ddf02-7a79-489e-8555-17826b373248)
