@@ -31,16 +31,14 @@
 Ход работы:
 - Были наёдены 4 переменные отвечающие за сложность игры и на основе значений этих переменных для первой сцены, были придуманы и протестированы ещё по 4 значения для переменных для уровней 2-10.
 
-![image](https://github.com/nekit-mazut/lab3/assets/145917921/c77af85e-682e-4209-af7b-289c4d404afc)
-
+![image](https://github.com/nekit-mazut/lab3/assets/145917921/ffc335dc-11de-4db8-8b78-7a5f6a5a82c1)
 
 ## Задание 2
 ###  Создайте 10 сцен на Unity с изменяющимся уровнем сложности. 
 Ход работы:
 - Были созданы 9 сцен повторяющих первую кроме переменных "Speed", "TimeBetweenEgg", "LeftRightDistance", "ChanceDirection".
-
-![image](https://github.com/nekit-mazut/lab3/assets/145917921/52f2a5ba-ff34-49fd-a6ef-2f83ec78dd37)
-
+  
+![image](https://github.com/nekit-mazut/lab3/assets/145917921/c80ec28a-874a-4c25-8393-7ad7b1ecc9e4)
 
 ## Задание 3
 ### Решение в 80+ баллов должно заполнять google-таблицу данными из Python. В Python данные также должны быть визуализированы.
